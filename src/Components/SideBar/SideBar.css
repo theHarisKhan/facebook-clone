@@ -1,0 +1,29 @@
+.Sidebar{
+    display: flex;
+    flex: 0.33;
+    flex-direction: column;
+    padding: 35px 10px;
+}
+
+.Sidebar_option{
+    display: flex;
+    align-items: center;
+    
+    padding: 0 10px;
+    border-radius: 10px;
+
+    transition: 350ms all;
+    cursor: pointer;
+}
+
+.Sidebar_option:hover{
+    background: rgb(238, 237, 237);
+}
+
+.Sidebar_option .MuiSvgIcon-root{
+    font-size: xx-large;
+}
+
+.Sidebar_option > h4{
+    margin-left: 4px;
+}

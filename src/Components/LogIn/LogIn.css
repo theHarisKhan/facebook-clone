@@ -1,0 +1,27 @@
+.LogIn {
+  padding-top: 60px;
+  display: grid;
+  place-items: center;
+}
+
+.fb--logo {
+  width: 230px;
+}
+
+.auth_btn {
+  background: #0066ff;
+  color: #ffffff;
+  padding: 10px 60px;
+  margin-top: 40px;
+  border: none;
+
+  font-size: 32px;
+  text-transform: capitalize;
+  transition: transform 350ms all;
+  cursor: pointer;
+}
+
+.auth_btn:hover {
+  background: #0043a8;
+  transform: scale(1.1);
+}

@@ -1,0 +1,57 @@
+.posts {
+  width: 510px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+
+  padding: 5px;
+  margin-top: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.6);
+}
+
+.post_image > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post_top,
+.post_options {
+  display: flex;
+  align-items: center;
+}
+
+.post_options {
+  justify-content: space-evenly;
+}
+
+.post_top > .post_info {
+  margin-left: 6px;
+  line-height: 0;
+}
+
+.post_top > .post_info p {
+  font-size: 14px;
+}
+
+.post_option {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  line-height: 0;
+  transition: 350ms all;
+  cursor: pointer;
+}
+
+.post_option > p {
+  margin-left: 4px;
+}
+
+.post_option:hover {
+  background: #e4e4e4;
+}
+
+.post_options > .post_option .MuiSvgIcon-root {
+  font-size: xx-large;
+}

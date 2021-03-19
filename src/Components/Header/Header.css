@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 30px;
+    overflow: hidden;
+    box-shadow: 0px 5px 17px -7px rgba(0,0,0,0.6);
+}
+
+.header_left,.header_middle,.header_right,.header_info,.header_input{
+    display: flex;
+    align-items: center;
+}
+
+.header_left > img{
+    width: 70px;
+}
+
+.header_left > .header_input{
+    margin-left: 5px;
+    background-color: #e4e3e3;
+    padding: 5px;
+    border-radius: 999px;
+}
+
+.header_left > .header_input > input{
+    background: transparent;
+    outline-width: 0;
+    border: none;
+}
+
+.header_middle > .header_option{
+    margin: 0 16px;
+    padding: 0 20px;
+    height: 100%;   
+    cursor: pointer;
+}
+
+.header_middle > .header_option .MuiSvgIcon-root{
+    font-size: 42px;
+    color: #6e6e6e;
+}
+
+.header_middle > .header_option:hover{
+    padding-bottom: 8px;
+    border-bottom: 6px solid #00aeff;
+}
+
+.header_option.active{
+    padding-bottom: 8px;
+    border-bottom: 6px solid #00aeff;
+}
+
+.header_option.active .MuiSvgIcon-root{
+    color: #00aeff;
+}
+
+.header_middle > .header_option:hover .MuiSvgIcon-root{
+    color: #00aeff;
+}
+
+.header_right > .header_info h4{
+    margin-left: 4px;   
+}

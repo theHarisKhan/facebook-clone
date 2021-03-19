@@ -1,0 +1,72 @@
+.StoryReel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+    height: 200px;
+    width: 120px;
+
+    margin: 0 6px;
+    padding: 5px;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 17px -7px rgba(0,0,0,0.6);
+    color: white;
+
+    transition: 350ms all;
+    cursor: pointer;
+}
+
+.story_main{
+    position: relative;
+    overflow: hidden;
+}
+
+.story_main::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    height: 80px;
+    width: 200px;
+    left: 0;
+    bottom: 0;
+}
+
+.story_main > h4{
+    width: 8ch;
+    text-align: center;
+    color: #464646;
+    z-index: 1;
+}
+
+.story_main .MuiSvgIcon-root{
+    position: absolute;
+    bottom: 60px;
+    left: 44px;
+    font-size: 40px;
+    background-color: #ffffff;
+    color: #008cff;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.story:hover{
+    transform: translateY(-10px);
+}
+
+.story > .story_profile{
+    border: 3px solid #0077ff;
+}
+
+.story > h4{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}

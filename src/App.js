@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Feed from './Components/Feed/Feed';
+import Header from './Components/Header/Header';
+import LogIn from './Components/LogIn/LogIn';
+import { useStateValue } from './Components/Redux/StateProvider';
+import SideBar from './Components/SideBar/SideBar';
+import Widgets from './Components/Widgets';
 
 function App() {
+  const [{user}, dispatch] = useStateValue()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {!user ? (
+        <LogIn />
+    ) : (
+      <>
+        <Header />
+        <div className="app_body">
+          <SideBar />
+          <Feed />
+          <Widgets />
+        </div>
+      </>
+    )}
     </div>
   );
 }
